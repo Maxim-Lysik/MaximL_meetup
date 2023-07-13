@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "285191805665",
+    "firebase_url": "https://maxim-lysik-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "maxim-lysik-app",
+    "storage_bucket": "maxim-lysik-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285191805665:android:2d467d757c49f6907375a0",
+        "android_client_info": {
+          "package_name": "com.maximlysik.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285191805665-6u4f8q76a87q1js496de8rg6tbt00u20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3oovSc-SuZjPiPBhUYa9htszww5Go9SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285191805665-6u4f8q76a87q1js496de8rg6tbt00u20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

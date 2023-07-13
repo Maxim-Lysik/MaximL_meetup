@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_calendar">
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.maximlysik.myapplication.screens.calendar.CalendarFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_navigation_calendar_to_newEventFragment"
+            app:destination="@id/newEventFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_rooms"
+        android:name="com.maximlysik.myapplication.screens.rooms.RoomsFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_rooms" >
+        <action
+            android:id="@+id/action_navigation_rooms_to_addRoomFragment"
+            app:destination="@id/addRoomFragment" />
+        <action
+            android:id="@+id/action_navigation_rooms_to_separateRoomFragment"
+            app:destination="@id/separateRoomFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_user_events"
+        android:name="com.maximlysik.myapplication.screens.events.UserEventsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_user_events" >
+        <action
+            android:id="@+id/action_navigation_user_events_to_separateEventFragment"
+            app:destination="@id/separateEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRoomFragment"
+        android:name="com.maximlysik.myapplication.screens.add_room.AddRoomFragment"
+        android:label="fragment_add_room"
+        tools:layout="@layout/fragment_add_room" />
+    <fragment
+        android:id="@+id/separateRoomFragment"
+        android:name="com.maximlysik.myapplication.screens.separate_room.SeparateRoomFragment"
+        android:label="fragment_separate_room"
+        tools:layout="@layout/fragment_separate_room" />
+    <fragment
+        android:id="@+id/newEventFragment"
+        android:name="com.maximlysik.myapplication.screens.new_event.NewEventFragment"
+        android:label="fragment_new_event"
+        tools:layout="@layout/fragment_new_event" />
+    <fragment
+        android:id="@+id/separateEventFragment"
+        android:name="com.maximlysik.myapplication.screens.separate_event.SeparateEventFragment"
+        android:label="fragment_separate_event"
+        tools:layout="@layout/fragment_separate_event" />
+</navigation>
